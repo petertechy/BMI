@@ -1,76 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BMI Calculator</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-      
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active hello hello-1" data-bs-interval="4000">
-            <div class="position text-center text-light col-10">
-              <h1 class=" textHeading">Unlocking Vitality: Your BMI Wellness Guide</h1>
-              <p class=" textSubheading">Embark on a transformative journey with our BMI tool, your key to unlocking vitality. Discover a world where health meets happiness, and your unique path to a healthier lifestyle begins. Join us on this empowering voyage to total well-being and vibrant living.</p>
-            </div>
-          </div>
-          <div class="carousel-item hello hello-2" data-bs-interval="4000">
-            <div class="position text-center text-light col-10 ">
-              <h1 class=" textHeading">BMI Insights: Navigating Health Brilliance</h1>
-              <p class=" textSubheading">Dive into the brilliance of health with our BMI mastery. Uncover insights that guide you towards optimal well-being. Your journey is unique, and with our comprehensive tool, you'll embrace a healthier lifestyle, one personalized step at a time. Begin your adventure to lasting wellness today.</p>
-            </div>
-          </div>
-          <div class="carousel-item hello hello-3" data-bs-interval="4000">
-            <div class="position text-center text-light col-10">
-              <h1 class="textHeading">Revitalize Your Life: BMI Wellness Unveiled</h1>
-              <p class="textSubheading">Step into a life of vitality and wellness as you explore the world of BMI with us. Unveil the secrets to a healthier you, embracing personalized insights that empower your journey. Your path to revitalized living starts here, where health and happiness harmonize.</p>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active hello hello-1" data-bs-interval="3000">
+          <div class="position text-center text-light col-10">
+            <h1 class="textHeading">
+              Unlocking Vitality: Your BMI Wellness Guide
+            </h1>
+            <p class="textSubheading">
+              Embark on a transformative journey with our BMI tool, your key to
+              unlocking vitality. Discover a world where health meets happiness,
+              and your unique path to a healthier lifestyle begins. Join us on
+              this empowering voyage to total well-being and vibrant living.
+            </p>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item hello hello-2" data-bs-interval="3000">
+          <div class="position text-center text-light col-10">
+            <h1 class="textHeading">
+              BMI Insights: Navigating Health Brilliance
+            </h1>
+            <p class="textSubheading">
+              Dive into the brilliance of health with our BMI mastery. Uncover
+              insights that guide you towards optimal well-being. Your journey
+              is unique, and with our comprehensive tool, you'll embrace a
+              healthier lifestyle, one personalized step at a time. Begin your
+              adventure to lasting wellness today.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item hello hello-3" data-bs-interval="3000">
+          <div class="position text-center text-light col-10">
+            <h1 class="textHeading">
+              Revitalize Your Life: BMI Wellness Unveiled
+            </h1>
+            <p class="textSubheading">
+              Step into a life of vitality and wellness as you explore the world
+              of BMI with us. Unveil the secrets to a healthier you, embracing
+              personalized insights that empower your journey. Your path to
+              revitalized living starts here, where health and happiness
+              harmonize.
+            </p>
+          </div>
+        </div>
       </div>
-
-
-<div class="row justify-content-evenly py-5">
-  <div class="col-5 img">
-
-  </div>
-  <div id="calculator" class="col-5 border shadow-sm rounded-3 p-3">
-    <h2 class="text-info text-center">BMI Calculator</h2>
-    <label class="form-label" for="height">Height (cm):</label>
-    <input class="form-control mb-2"  type="number" id="height" placeholder="Enter height" required>
-    <br>
-    <label class="form-label" for="weight">Weight (kg):</label>
-    <input class="form-control mb-3" type="number" id="weight" placeholder="Enter weight" required>
-    <br>
-    <div class="mx-auto text-center col-6">
-        <button class="btn btn-info form-control fw-bold" onclick="calculateBMI()">Calculate BMI</button>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div id="result"></div>
-  </div>
-</div>
 
-<div class="grid">
-  <div class="child child-a"></div>
-  <div class="child child-b"></div>
-  <div class="child child-c"></div>
-  <div class="child child-d"></div>
-  <div class="child child-e"></div>
-</div>
+    <div class=" py-5 backImage container-fluid">
+      <div class="row gap-5 justify-content-evenly align-items-center">
+        <div class="col-6 img"></div>
+      <div id="calculator" class="col-5 shadow-sm rounded-3 p-3">
+        <h2 class="text-info text-center">BMI Calculator</h2>
+        <label class="form-label fw-bold text-light" for="height">Height (cm):</label>
+        <input
+          class="form-control mb-2"
+          type="number"
+          id="height"
+          placeholder="Enter height"
+          required
+        />
+        <br />
+        <label class="form-label fw-bold text-light" for="weight">Weight (kg):</label>
+        <input
+          class="form-control mb-3"
+          type="number"
+          id="weight"
+          placeholder="Enter weight"
+          required
+        />
+        <br />
+        <div class="mx-auto text-center col-6">
+          <button
+            class="btn btn-info form-control fw-bold"
+            onclick="calculateBMI()"
+          >
+            Calculate BMI
+          </button>
+        </div>
+        <div id="result"></div>
+      </div>
+      </div>
+    </div>
 
-  <script src="app.js">
+    <!-- <div class="grid">
+      <div class="child child-a"></div>
+      <div class="child child-b"></div>
+      <div class="child child-c"></div>
+      <div class="child child-d"></div>
+      <div class="child child-e"></div>
+    </div> -->
 
-  </script>
-</body>
+    <div class="mx-auto bg-secondary bg-opacity-25 pt-5 pb-5">
+    
+      <div class="row justify-content-evenly pt-5 pb-5">
+        <div class="col-5 col-sm-8 col-lg-5 col-md-5">
+          <h1 class="mb-5">WE'RE READY, LET'S TALK.</h1>
+          <input
+          id="nameInput"
+            class="form-control mb-3 p-3"
+            type="text"
+            placeholder="Your Name"
+          />
+
+          <input
+          id="emailInput"
+            class="form-control mb-3 p-3"
+            type="text"
+            placeholder="Email Address"
+          />
+
+          <textarea
+            name="message"
+            id="messageInput"
+            cols="50"
+            rows="5"
+            placeholder="Message"
+            class="form-control p-3 mb-3"
+          ></textarea>
+
+          <div><button id="submitBtn" class="btn btn-info mt-2">Submit</button></div>
+        </div>
+
+        <div class="col-5 col-sm-8 col-lg-5 col-md-5">
+          <h1>Contact Info</h1>
+
+          <h6 class="mt-4 fw-bold">Address</h6>
+          <p>Zone 10, No 11, Alafia Estate, Ojoo, Ibadan, Nigeria</p>
+
+          <h6 class="mt-4 fw-bold">Email Us</h6>
+          <p>
+            <a class="text-dark" href="mailto: ikolabaolanrewaju@mail.com"
+              >ikolabaolanrewaju@gmail.com</a
+            >
+          </p>
+
+          <h6 class="mt-4 fw-bold">Call Us</h6>
+          <p>
+            <a class="text-dark" href="tel: +2348134588157"
+              >+234-813-458-8157</a
+            >
+          </p>
+
+          <div class="mt-3">
+            <h6 class="mt-4 mb-3 fw-bold">Follow Us</h3>
+            <a class="text-dark" target="_blank" href=""
+              ><i class="fa-brands fa-facebook fs-3 me-5"></i
+            ></a>
+            <a class="text-dark" target="_blank" href="https://github.com/petertechy"
+              ><i class="fa-brands fa-github fs-3 me-5"></i
+            ></a>
+            <a class="text-dark" target="_blank" href="https://www.linkedin.com/in/peter-ikolaba-66873a230"
+              ><i class="fa-brands fa-linkedin fs-3 me-5"></i
+            ></a>
+            <a class="text-dark" target="_blank" href=""
+              ><i class="fa-brands fa-twitter fs-3 me-5"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p-3 bg-dark">
+      <h6 class="text-light text-center">Copyright <span>&copy;</span> 2024 - BMI App</h6>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>

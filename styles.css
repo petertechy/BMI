@@ -1,43 +1,79 @@
-.hello-1{
-    background: radial-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("./media/image1.jpg");
-    height: 100vh;
-    /* width: 100%; */
-    background-position: center;
-    background-size: cover;
-    
-}
-.hello-2{
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("./media/image2.jpg");
-    height: 100vh;
-    /* width: 100%; */
-    background-position: center;
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    
-}
-.hello-3{
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("./media/image3.jpg");
-    height: 100vh;
-    /* width: 100%; */
-    background-position: center;
-    background-size: cover;
+/* *{
+    background-color: rgba(255, 0, 0, 0.396);
+} */
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: purple;
 }
-.position{
-    position: absolute;
-    top: 17rem;
-    left: 6rem;
+.hello-1 {
+  background: radial-gradient(
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("./media/image1.jpg");
+  height: 100vh;
+  /* width: 100%; */
+  background-position: center;
+  background-size: cover;
 }
-.img{
-    background: url("./media/image6.jpg");
-    /* height: 500px; */
-    background-position: center;
-    background-size: cover;
+.hello-2 {
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("./media/image2.jpg");
+  height: 100vh;
+  /* width: 100%; */
+  background-position: center;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
-.textHeading{
-    font-size: 40px;
+.hello-3 {
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("./media/image3.jpg");
+  height: 100vh;
+  /* width: 100%; */
+  background-position: center;
+  background-size: cover;
 }
-.textSubheading{
-    font-size: 18px;
+.position {
+  position: absolute;
+  top: 17rem;
+  left: 6rem;
+}
+.img {
+  background: url("./media/image6.jpg");
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  transform: scale(1.05);
+}
+.textHeading {
+  font-size: 40px;
+}
+.textSubheading {
+  font-size: 18px;
+}
+.backImage {
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("./media/image7.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
 }

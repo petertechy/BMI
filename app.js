@@ -33,3 +33,21 @@ function calculateBMI() {
       return 'Obese';
     }
   }
+
+  document.getElementById("submitBtn").addEventListener("click", function () {
+    // Get input values
+    const name = document.getElementById("nameInput").value;
+    const email = document.getElementById("emailInput").value;
+    const message = document.getElementById("messageInput").value;
+
+
+    // Log the values (replace with your email sending logic on the server)
+    console.log("Name:", name);
+    console.log("Email:", email);
+    console.log("Message:", message);
+
+    // Clear form fields
+    document.getElementById("nameInput").value = "";
+    document.getElementById("emailInput").value = "";
+    document.getElementById("messageInput").value = "";
+});
