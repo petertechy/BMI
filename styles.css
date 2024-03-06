@@ -1,16 +1,15 @@
-
 .hello-1{
-    background: url("./media/image1.jpg");
+    background: radial-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("./media/image1.jpg");
     height: 100vh;
-    width: 100%;
+    /* width: 100%; */
     background-position: center;
     background-size: cover;
     
 }
 .hello-2{
-    background: url("./media/image2.jpg");
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("./media/image2.jpg");
     height: 100vh;
-    width: 100%;
+    /* width: 100%; */
     background-position: center;
     background-size: cover;
     background-position: bottom;
@@ -18,10 +17,27 @@
     
 }
 .hello-3{
-    background: url("./media/image3.jpg");
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("./media/image3.jpg");
     height: 100vh;
-    width: 100%;
+    /* width: 100%; */
     background-position: center;
     background-size: cover;
 
+}
+.position{
+    position: absolute;
+    top: 17rem;
+    left: 6rem;
+}
+.img{
+    background: url("./media/image6.jpg");
+    /* height: 500px; */
+    background-position: center;
+    background-size: cover;
+}
+.textHeading{
+    font-size: 40px;
+}
+.textSubheading{
+    font-size: 18px;
 }

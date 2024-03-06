@@ -12,14 +12,23 @@
       
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active hello hello-1" data-bs-interval="10000">
-            
+          <div class="carousel-item active hello hello-1" data-bs-interval="4000">
+            <div class="position text-center text-light col-10">
+              <h1 class=" textHeading">Unlocking Vitality: Your BMI Wellness Guide</h1>
+              <p class=" textSubheading">Embark on a transformative journey with our BMI tool, your key to unlocking vitality. Discover a world where health meets happiness, and your unique path to a healthier lifestyle begins. Join us on this empowering voyage to total well-being and vibrant living.</p>
+            </div>
           </div>
-          <div class="carousel-item hello hello-2" data-bs-interval="2000">
-            
+          <div class="carousel-item hello hello-2" data-bs-interval="4000">
+            <div class="position text-center text-light col-10 ">
+              <h1 class=" textHeading">BMI Insights: Navigating Health Brilliance</h1>
+              <p class=" textSubheading">Dive into the brilliance of health with our BMI mastery. Uncover insights that guide you towards optimal well-being. Your journey is unique, and with our comprehensive tool, you'll embrace a healthier lifestyle, one personalized step at a time. Begin your adventure to lasting wellness today.</p>
+            </div>
           </div>
-          <div class="carousel-item hello hello-3" data-bs-interval="2000">
-            
+          <div class="carousel-item hello hello-3" data-bs-interval="4000">
+            <div class="position text-center text-light col-10">
+              <h1 class="textHeading">Revitalize Your Life: BMI Wellness Unveiled</h1>
+              <p class="textSubheading">Step into a life of vitality and wellness as you explore the world of BMI with us. Unveil the secrets to a healthier you, embracing personalized insights that empower your journey. Your path to revitalized living starts here, where health and happiness harmonize.</p>
+            </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -33,7 +42,11 @@
       </div>
 
 
-  <div id="calculator" class="col-7 border shadow-sm rounded-3 p-3">
+<div class="row justify-content-evenly py-5">
+  <div class="col-5 img">
+
+  </div>
+  <div id="calculator" class="col-5 border shadow-sm rounded-3 p-3">
     <h2 class="text-info text-center">BMI Calculator</h2>
     <label class="form-label" for="height">Height (cm):</label>
     <input class="form-control mb-2"  type="number" id="height" placeholder="Enter height" required>
@@ -41,11 +54,20 @@
     <label class="form-label" for="weight">Weight (kg):</label>
     <input class="form-control mb-3" type="number" id="weight" placeholder="Enter weight" required>
     <br>
-    <div class="border mx-auto text-center">
-        <button class="btn btn-info border" onclick="calculateBMI()">Calculate BMI</button>
+    <div class="mx-auto text-center col-6">
+        <button class="btn btn-info form-control fw-bold" onclick="calculateBMI()">Calculate BMI</button>
     </div>
     <div id="result"></div>
   </div>
+</div>
+
+<div class="grid">
+  <div class="child child-a"></div>
+  <div class="child child-b"></div>
+  <div class="child child-c"></div>
+  <div class="child child-d"></div>
+  <div class="child child-e"></div>
+</div>
 
   <script src="app.js">
 
